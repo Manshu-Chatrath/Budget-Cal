@@ -1,0 +1,297 @@
+body
+{
+    font-family: sans-serif;
+}
+.content
+{
+    position: relative
+}
+.main
+{
+    background-image: url("Images/pic.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    filter: blur(8px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+.header
+{   display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+    width: 27%;
+    margin: 0 auto;
+    padding: .3rem 0;
+    box-shadow: 6px 6px rgba(0, 0, 0, 0.598);
+    text-align: center;
+    margin-bottom: 30px;
+}
+@media(max-width: 836px)
+{   .header
+    {
+        width: 50%;
+    }
+}
+@media(max-width: 455px)
+{
+    .header
+    {
+        width: 70%;
+    }
+}
+.budget-measures
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cal
+{
+    width: 40%;
+    height: auto;
+    color: white;
+    font-weight: bold;
+}
+.expense
+{   
+    width: 30%;
+}
+.cal input {
+    height: 1.5rem;
+    width: 14rem;
+    border-radius: 20px;
+    border: none;
+    margin-top: .5rem;
+    font-size: 1.2rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    color: black;
+}
+.income,.subtract,.total,.equal,.savings
+{
+    margin-bottom: 30px;
+}
+.calculate {
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    transition: all .1s; 
+    margin-left: 30%;
+}
+button
+{
+    transition: all .4s;
+}
+    button:hover {
+        transform: translateY(-3px);
+        box-shadow: 2px 2px 2px black;
+        cursor: pointer;
+    }
+.fa-money-check-alt
+{
+color: green;
+}
+.fa-piggy-bank
+{
+    color: pink;
+}
+.fa-wallet
+{
+    color: brown;
+}
+.h2
+{
+    display: flex;
+    margin-bottom: 15px;
+}
+.add {
+    border-radius: 50px;
+    border: .3px solid white;
+    font-size: 25px;
+    color: white;
+    width: 7rem;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+.heading2
+{
+    color: white;
+}
+button:active {
+    transform: translateY(3px); 
+}
+.clear {
+    margin-top: 15px;
+    margin-left: 22%;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    width: 200px; }
+.article
+{
+    box-shadow: 4px 4px 4px 4px rgb(0 0 0 / 60%);
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 100px;
+    margin-bottom: 1.2rem;
+}
+.basic
+{
+    display: flex;
+    justify-content: space-between;
+}
+.name
+{
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    margin-left: 5px;
+}
+.button i
+{
+    margin-left: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.fa-pen
+{
+    color: green;
+}
+.fa-trash-alt
+{
+    color: red;
+    margin-right: 5px;
+}
+.price
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 30px;
+}
+
+.cal
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.calculate
+{
+    margin-left: 15%;
+}
+.clear
+{
+    margin-left: 15%;
+}
+.expenses
+{
+width: 100%;
+margin-left: 20%;
+}
+.realform
+{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0%;
+    left: 0%;
+    height: 130vh;
+    width: 100%;
+}
+.form
+{   margin-top: 5%;
+    margin-left: 20%;
+    background-color: white;
+    height: auto;
+    width: 60%;
+    padding-top: .1rem;
+    padding-bottom: 1rem;
+    
+}
+.heading-form {
+    display: block;
+    margin-left: 6%;
+    color: #333333;
+    margin-top: 1.4rem; }
+  
+  .line {
+    margin-bottom: 1rem;
+    margin-left: 6%;
+    color: red; }
+    .name-expense,.name-amount {
+        margin-top: 3%;
+        border: none;
+        border-bottom: 3px solid black;
+        margin-left: 6%;
+        width: 82%;
+        margin-bottom: 2rem;
+        font-size: 20px;
+        padding-bottom: .3rem;
+        padding-top: .3rem; }
+  .add-expense {
+                    background-color: black;
+                    color: white;
+                    border-radius: 50px;
+                    padding-top: .7rem;
+                    padding-bottom: .7rem;
+                    width: 40%;
+                    margin-left: 30%; }
+label {
+                    margin-left: 6%; }
+
+
+                    @media(max-width: 765px)
+                    {.budget-measures
+                    {
+                        flex-direction: column;  
+                    }
+                }
+ @media(max-width: 542px)
+                    {
+                        .clear
+                    {
+                        margin-left: 15%;
+                    }
+                        .article
+                        {
+                            width: 300px;
+                        }
+                    }
+@media(max-width: 386px)
+{
+ .expenses
+ {
+     margin-left: 0%;
+ }
+    .income,.subtract,.total,.equal,.savings
+{
+    display: block;
+}
+}
+@media(max-width: 311px)
+{ .expense
+    {
+        width: 200px;
+    }
+}
+.hide
+{
+    display: none;
+}
+.warning
+{
+    color: white;
+    font-weight: bold;
+}
